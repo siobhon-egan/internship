@@ -1,0 +1,13 @@
+Otu1, Otu2 and Otu3 are in phylum Bacteroidetes.
+
+Genus bootstrap values are 0.36, 0.46 and 0.55.
+(Your values may be slightly different because bootstrapping uses
+random numbers).
+
+At the time I made the tutorial, top hit identities according to NCBI
+BLAST were Otu1 92%, Otu2 94% and Otu3 92%. For all three, the top hit
+was Muribaculum intestinale strain YL27. The identities are <95% so we
+cannot identify a genus. This may change as new sequences are added
+to the 16S database.
+
+The most common phylum is Firmicutes (178 OTUs).

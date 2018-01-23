@@ -1,0 +1,7 @@
+After normalizing, the mock sample has richness 30, Shannon entropy 4.0 bits.
+The alpha diversity values did not change.
+They did not change because normalizing doesn't change whether an OTU
+is present (richness) or its frequency (Shannon).
+Actually, this is not strictly correct because normalizing changes
+the frequency slightly because of rounding to a nearest integer,
+and an OTU can disappear if a small value is rounded to zero.

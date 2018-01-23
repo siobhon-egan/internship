@@ -1,0 +1,2 @@
+Richness of the mock sample is 30.
+Shannon entropy of the mock sample is 4.0 bits.

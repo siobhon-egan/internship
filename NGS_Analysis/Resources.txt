@@ -1,0 +1,43 @@
+Links and resources for training in NGS analysis
+
+Softare carpentry and data carpentry.
+Both provide very details instrcutions on the basics of coding and data anlysis.
+Recommend to start with software carpentry.
+
+https://software-carpentry.org/
+- The Unix Shell - Required (this is a great starting point)
+- Version control with Git - very important when interacting with the notebooks and scipts in this directory
+- Version control with Mercurial - optional (not needed for these purposes)
+- Using Databases and SQL - optional extra
+- Programming with Python - highly recommended
+- R for Reproducible Scientific Analysis - required
+- Programming with MATLAB - optional extra (reference towards programming in R)
+- Automation and Make - optional extra
+
+http://www.datacarpentry.org/lessons/
+- Ecology workshop home page - recommended
+- Data organisation in spreadsheets - recommended
+- Data cleaning with Openefine - optional extra
+- Data Management with SQL - optional extra
+- Data Analysis and Visualization in R - recommended
+- Data Analysis and Visualization in Python - recommended
+
+A number of online modules and courses are avilable.
+Popular sites include:
+	https://courses.edx.org
+	https://www.coursera.org
+	https://www.datacamp.com/home
+These can provide good starting points for general knowledge.
+However are often more theoretical based, and can lack 'practical' components.
+Recommendations for courses with good practical components
+	https://www.coursera.org/learn/dna-sequencing - these lessons labelled 'practical' are patiuclarly useful as they have split screen and run through the code line by line. Although they do not use amplicon based NGS examples they do inlclude good fundamental lessons (including how to read a fastq file)
+	https://www.coursera.org/learn/bioinformatics-methods-1 - while it does not have recorded practical it goes have a 'post-lab lecture' which is helpful. Their handouts are very detailed, however again do not give examples specific to NGS but mor general bioinformatics.
+
+Many other courses give a good fundation in the theory of pipelines and data anlysis however do not have any pratical lectures where they step you through analysis.
+
+##################################################
+
+Data anlysis pipeline resources
+
+
+

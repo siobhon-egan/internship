@@ -1,0 +1,5 @@
+Otu20 is annotated as "other" with 94% identity to the closest mock refseq (P.aeruginosa).
+
+Otu20 in out_mock/otus.fa is identical to Otu107 in out/otus.fa.
+
+It could be due to cross-talk or a contaminant.

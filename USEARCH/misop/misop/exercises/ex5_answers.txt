@@ -1,0 +1,18 @@
+At the time I made the tutorial, there are eleven
+Pseudomonas species with 100% identity BLAST hits
+to Otu20:
+
+P. antarctica
+P. azotoformans
+P. costantinii
+P. extremorientalis
+P. fluorescens
+P. lurida
+P. meridiana
+P. poae
+P. simiae
+P. tolaasii
+P. trivialis
+
+You may find more if new sequences have been added to
+the 16S database.
