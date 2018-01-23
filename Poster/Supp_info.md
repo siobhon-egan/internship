@@ -1,6 +1,6 @@
 # Meta-Analysis of Australian Tick Microbiomes
 
-## Acknowledgements
+### Acknowledgements
 
 **Funding & resources**
 - This research was part-funded by the Australian Research Council (Linkage Project
@@ -8,6 +8,7 @@
 - Bayer Australia Ltd assisted in distributing and collecting tick sampling kits from veterinary clinics around Australia.
 
 **Contribution of tick specimens**
+
 _Organisations_
 - Animal Management in Rural & Remote Indigenous Communities (AMRRIC)
 - The Animal Protection Society of WA Inc. (APS),
