@@ -1,0 +1,125 @@
+#!/bin/bash
+#
+#	Requirements: usearch9.2, usearch10 and usearch8 must be installed on the PATH as "usearch9.2" "usearch10" and "usearch8" - it does not matter whether
+#	you have the 32-bit of 64-bit version.
+#	I have a 64 bit version of usearch9.2, so I use that for steps that need higher RAM requiremnets.
+#	This script will work in unix and linux environments.
+#
+#	This script taked raw MiSeq demultiplexed .fastq files for input and performs the following tasks:
+#
+#	1) Merging of illumina paired reads
+#	2) Quality filtering of sequence data and removal of short dimer seqs
+#	3) Trimming of primer sequences and distal bases and removal of sequences without correct primer sequences
+#	4) Renaming files with USEARCH labels "barcodelabel=sample_id;sequence_id"
+#	5) Removing low abundant sequences
+#	6) OTU clusting and chimera detection with UNOISE3
+##########################################################################################
+#	Input raw unmerged filenames must be named "sample_id_SXXX_L001_R1_001.fastq" (read 1)
+#	and "sample_id_SXXX_L001_R2_001.fastq" (read 2) and all deposited in a directory specified
+#	by the "$raw_data" variable. "SXXX" is the sample number given by the MiSeq
+#	in the order you entered them in the Sample Sheet.
+#
+#	Before use: $chmod +x this_script.sh
+#	To run: $./this_script.sh
+#	This script will read any input directory specified by the "raw_data" variable, but will deposit all
+#	output into the current working diretory.
+##########################################################################################
+# Enter name of usearch to match path
+usearch8="usearch8"
+usearch9.2="usearch9.2"
+usearch10="usearch10"
+
+# Enter raw data directorry
+raw_data="raw_data"
+# Enter raw read summary directory
+read_summary="1.read_summary"
+# Enter directory for merged output
+merged_data="2.merged_sequences"
+# Enter minimum merge overlap - 50 bp minimum
+overlap="50"
+# Enter maximum number of mismatches in the alignment (Default 5), consider increasing if you have long overlaps
+maxdiffs="15"
+# Enter directory for quality filtered output
+QF="quality_filtered"
+# Enter % expected error rate threshold for seq quality filtering (1% = 0.01)
+error_rate="0.01"
+# Enter min length of sequence for trimming in bp (eg. to keep all seqs above 200 bp enter "200")
+minlen="150"
+# Enter directory for trimmed data
+trimmed_data="trimmed_data"
+# Enter FWD primer sequence 5'-3' (degenerate bases OK)
+fwd_primer="AGAGTTTGATCCTGGCTYAG"
+# Enter REV primer sequence 5'-3' (degenerate bases OK)
+rev_primer="TGCTGCCTCCCGTAGGAGT"
+# Enter number of primer missmatches allowed
+pcr_missmatches="0"
+# Enter directory for labeled data
+labeled_data="3.labeled_data"
+# Enter directory for derep seq (unique seqs)
+derep_dir="4.dereplicated_sequences"
+# Enter directory for singleton seqs
+low_abund_seqs="5.singleton_sequences"
+# Enter directory for singleton filtered data
+SF="6.singleton_filtered"
+# Enter max replicate cluster size (eg. to remove singletons enter 1, for duplicates enter 2)
+maxsize="1"
+# Enter directory for SF-derep data
+SF_derep="7.dereplicated_filtered_data"
+#Enter directory for unoise files
+unoise_all="8.unoise_all"
+
+##########################################################################################
+# DO NOT EDIT BELOW THIS LINE
+##########################################################################################
+
+##########################################################################################
+##########################################################################################
+##### STEP 1 READ SUMMARY ####
+# URL https://www.drive5.com/usearch/manual/cmd_fastx_info.html
+# Gives a short summary report of the sequences in a FASTA or FASTQ file.
+# Handy for a frst check on what is in a new file.
+# The report is written to the console and can be saved to a text file using the -output option.
+
+echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+echo READ SUMMARY
+echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+mkdir ${read_summary}
+
+for fq in $raw_data/*R1*.fastq
+ do
+  usearch10 -fastx_info $fq -output $read_summary/1a_fwd_fastq_info.txt
+ done
+
+for fq in $raw_data/*R2*.fastq
+ do
+  usearch10 -fastx_info $fq -output $read_summary/1b_rev_fastq_info.txt
+done
+
+##########################################################################################
+##########################################################################################
+
+echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+echo Merging paried illumina sequences
+echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		mkdir ${merged_data}
+
+#*****************************************************************************************
+# Step2: merge data with usearch9 -fastq-filter
+
+for file1 in ${raw_data}/*R1_001.fastq
+	do
+
+		echo ""
+		echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		echo Merging paired reads
+		echo forward reads are:
+		echo $(basename ${file1})
+		echo reverse reads are:
+		echo $(basename ${file1} R1_001.fastq)R2_001.fastq
+
+usearch10 -fastq_mergepairs ${raw_data}/*R1*.fastq -reverse ${raw_data}/*R2*.fastq -relabel @ -fastq_maxdiffs ${maxdiffs} -fastq_minovlen ${overlap} \
+-fastq_minmergelen 30 -fastq_maxmergelen 500 -fastqout ${merged_data}/merged.fq -fastqout_notmerged_fwd ${merged_data}/not_merged_fwd.fq \
+-fastqout_notmerged_rev ${merged_data}/not_merged_rev.fq -report ${merged_data}/2d_merging_seqs_report.txt -tabbedout ${merged_data}/2e_tabbedout.txt \
+-alnout ${merged_data}/2f_aln.txt

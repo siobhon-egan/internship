@@ -1,0 +1,36 @@
+https://www.drive5.com/usearch/manual9.2/cmds_all.html
+
+usearch9.2_linux -unoise2 all_samples_SF_DR.fasta -zotus unoise_zotus.fasta -tabbedout unoise1_tab.txt
+
+https://www.drive5.com/usearch/manual9.2/cmd_unoise2.html
+usearch -unoise2 uniques.fa -fastaout denoised.fa -otudbout db.fa
+
+https://www.drive5.com/usearch/manual9.2/mapreadstootus.html
+usearch -usearch_global reads.fa -db otus.fa -strand plus -id 0.97 -otutabout otu_table.txt \
+  -biomout otu_table.json
+
+  https://www.drive5.com/usearch/manual9.2/unoise_pipeline.html
+
+usearch -fastq_mergepairs *_R1*.fastq -relabel @ -fastqout reads.fq
+
+usearch -fastq_filter reads.fq -fastq_maxee 1.0 -fastaout filtered.fa
+
+usearch -fastx_uniques filtered.fa -fastaout uniques.fa -sizeout
+
+usearch -unoise uniques.fa -tabbedout out.txt -fastaout denoised.fa
+
+usearch -usearch_global reads.fq -db denoised.fa -strand plus -id 0.97 -otutabout otu_table.txt
+
+https://www.drive5.com/usearch/manual/cmd_unoise3.html
+
+https://www.drive5.com/usearch/manual9.2/cmd_cluster_otus_utax.html
+usearch -cluster_otus_utax reads.fq -db 16s_ref.udb -utax_level f -otus otus.fa \
+   -strand plus -utaxotusout otus.txt -utaxout out.utax
+
+
+https://www.drive5.com/usearch/manual9.2/cmd_cluster_otus.html
+usearch -cluster_otus derep.fa -otus otus.fa -uparseout out.up -relabel OTU -minsize 2
+usearch -usearch_global all_reads.fa -db otus.fa -strand plus -id 0.97 -otutabout otu_table.txt
+
+
+https://www.drive5.com/usearch/manual/uchime_algo.html

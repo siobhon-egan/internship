@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11905\paperh16837\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 library("phyloseq")\
+library("tidyverse")\
+library("readr")\
+library("ape")\
+library("plyr")\
+rm(list=ls())\
+setwd("~/tick_meta_analysis/data")\
+# import otu tab - the first column with the OTU number must be deleted, ensure that as above it is ordered by OTU numer, order of sample\
+# columns must match the order of the metadata table\
+uparse_otus <- read_csv("~/tick_meta_analysis/data/uparse_otu_tab_edited2.csv")\
+otumat <- as.matrix(uparse_otus)\
+rownames(otumat) <- paste0("OTU", 1:nrow(otumat))\
+colnames(otumat) <- paste0("Sample", 1:ncol(otumat))\
+otumat\
+# import taxonomy table - ensure in order by OTU number\
+taxonomy <- read_csv("~/tick_meta_analysis/data/GGtaxonomy.csv")\
+taxmat <- as.matrix(taxonomy)\
+rownames(taxmat) <- rownames(otumat)\
+colnames(taxmat) <- c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species")\
+taxmat\
+class(otumat)\
+class(taxmat)\
+OTU = otu_table(otumat, taxa_are_rows = TRUE)\
+TAX = tax_table(taxmat)\
+OTU\
+TAX\
+physeq = phyloseq(OTU, TAX)\
+physeq\
+sample_names(physeq)\
+# the order of the rows must match the order of the columns in the OTU table, the number of rows and sample names must also be a match\
+meta_data <- read_csv("~/tick_meta_analysis/data/meta-data.csv")\
+sampledata = sample_data(data.frame(\
+ meta_data, row.names=sample_names(physeq), stringsAsFactors=FALSE))\
+sampledata\
+random_tree = rtree(ntaxa(physeq), rooted=TRUE, tip.label=taxa_names(physeq))\
+plot(random_tree)\
+physeq1 = merge_phyloseq(physeq, sampledata, random_tree)\
+physeq1\
+# this may take a long time if you have a large datasey\
+plot_tree(physeq1, color="Genus_species", label.tips="taxa_names", ladderize="left", plot.margin=0.3)\
+# Plotting just the OTUs, and shading the points by Phylum\
+physeq.ord <- ordinate(physeq, "NMDS", "bray")\
+p1 = plot_ordination(physeq.ord, physeq)\
+print(p1)\
+subset <- subset_taxa(physeq, Phylum=="p__Actinobacteria")\
+gpt <- prune_taxa(names(sort(taxa_sums(gpt),TRUE)[1:300]), gpt)\
+plot_heatmap(physeq1, sample.label="Genus_species")\
+plot_heatmap(physeq1)\
+plot_bar(physeq1, fill = "Phylum")}
