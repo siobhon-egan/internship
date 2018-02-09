@@ -12,14 +12,6 @@ Briefly this analysis can be broken down into:
 5. Statistical analysis and production of publication quality figures using RStudio and packages including Phyloseq, Microbiome and ggplot.
 
 ***
-
-It is important you read the documentation and any suggested links thoroughly rather than follow this 'blind'.
-Ensure that what you are putting in and what comes out makes biological sense and is robust!
-<div class="alert alert-success">
-Blah blah blah
-</div>
-
-***
 # References
 
 Main software and packages used
