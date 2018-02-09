@@ -11,12 +11,18 @@ Briefly this analysis can be broken down into:
 4. Taxonomy assignment in QIIME2
 5. Statistical analysis and production of publication quality figures using RStudio and packages including Phyloseq, Microbiome and ggplot.
 
+***
+
+It is important you read the documentation and any suggested links thoroughly rather than follow this 'blind'.
+Ensure that what you are putting in and what comes out makes biological sense and is robust!
+
+***
 # References
 
 Main software and packages used
 
 * [USEARCH](https://www.drive5.com) Developer: Robert Edgar.
-* [QIIME2]((https://qiime2.org) Developers: J Gregory Caporaso, Justin Kuczynski, Jesse Stombaugh, Kyle Bittinger, Frederic D Bushman, Elizabeth K Costello, Noah Fierer, Antonio Gonzalez Pena, Julia K Goodrich, Jeffrey I Gordon, Gavin A Huttley, Scott T Kelley, Dan Knights, Jeremy E Koenig, Ruth E Ley, Catherine A Lozupone, Daniel McDonald, Brian D Muegge, Meg Pirrung, Jens Reeder, Joel R Sevinsky, Peter J Turnbaugh, William A Walters, Jeremy Widmann, Tanya Yatsunenko, Jesse Zaneveld and Rob Knight.
+* [QIIME2](https://qiime2.org) Developers: J Gregory Caporaso, Justin Kuczynski, Jesse Stombaugh, Kyle Bittinger, Frederic D Bushman, Elizabeth K Costello, Noah Fierer, Antonio Gonzalez Pena, Julia K Goodrich, Jeffrey I Gordon, Gavin A Huttley, Scott T Kelley, Dan Knights, Jeremy E Koenig, Ruth E Ley, Catherine A Lozupone, Daniel McDonald, Brian D Muegge, Meg Pirrung, Jens Reeder, Joel R Sevinsky, Peter J Turnbaugh, William A Walters, Jeremy Widmann, Tanya Yatsunenko, Jesse Zaneveld and Rob Knight.
 * [RStudio](http://www.rstudio.com/.) Developers: RStudio Team
 * [Phyloseq](https://joey711.github.io/phyloseq/) Developers: Paul McMurdie and Susan Holmes.
 * [Microbiome](http://microbiome.github.io/microbiome/): Developers: Leo Lahti, Sudarshan Shetty, Tineka Blake and Jarkko Salojarvi.
