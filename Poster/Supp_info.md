@@ -63,3 +63,13 @@ _Individuals_
 2. Radcliffe, J., Rusjakovski, N., Forkert, J., Jones, M., and Stewart, C. 2016. Senate inquiry: Growing evidence of an emerging tick-borne disease that causes a Lyme-like illness for many Australian patients. Australian Commonwealth Government
 3. Loh, S. M., Gofton, A. W., Lo, N., Gillet, A., Ryan, U. M., Irwin, P. J. and Oskam, C. 2016. Novel _Borrelia_ species detected in echidna ticks, _Bothriocroton concolor_, in Australia. Parasites & Vectors 9:339.
 4. Gofton, A. W., Dogget, S., Ratchford, A., Ryan, U., Irwin, P 2016. Phylogenetic characterisation of two novel Anaplasmataceae from Australian _Ixodes holocyclus_ ticks: ‘Candidatus Neoehrlichia australis’ and ‘Candidatus Neoehrlichia arcana’ IJSEM 66:4256-4261.
+
+## Want more information?
+
+Head to the following for more links on research by the Cryptick Lab
+
+- [Vector and Waterborne Pathogens Research Group] (http://www.murdoch.edu.au/Research-capabilities/Vector-and-Waterborne-Pathogens-Group/)
+- [Join our pilot study](http://www.murdoch.edu.au/Research-capabilities/Vector-and-Waterborne-Pathogens-Group/Pilot-Study/)
+- [Cryptick Lab Facebook Page](https://www.facebook.com/crypticklab/)
+- [Cryptick Lab Twitter Page](https://twitter.com/cryptick_lab)
+
