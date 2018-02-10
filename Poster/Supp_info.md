@@ -1,10 +1,12 @@
 # Meta-Analysis of Australian Tick Microbiomes
 
-### Acknowledgements
+## Acknowledgements
 
 Vector and Waterborne Pathogen Research Group, Murdoch University, Western Australia
+Pawsey Supercomputing Centre, Kensington, Western Australia.
 
 **Funding & resources**
+- Siobhon Egan was funded through the Pawsey/CSIRO summer internship program 2017-2018.
 - This research was part-funded by the Australian Research Council (Linkage Project
 130100050), Bayer Australia Ltd and Bayer AG (Germany).
 - Bayer Australia Ltd assisted in distributing and collecting tick sampling kits from veterinary clinics around Australia.
@@ -14,30 +16,47 @@ Vector and Waterborne Pathogen Research Group, Murdoch University, Western Austr
 _Organisations_
 - Animal Management in Rural & Remote Indigenous Communities (AMRRIC)
 - Asquith Veterinary Clinic
+- Department of Agriculture and Food
 - Gordon Veterinary Hospital
 - Merewether Veterinary Specialist Centre
 - Parasitology Division School of Veterinary and Life Sciences, Murdoch University
 - Salamander Bay Veterinary Clinic
 - Snowy River Veterinary Clinic
+- Territory Wildlife Park
 - The Animal Protection Society of WA Inc. (APS)
+- University of Sydney
+- University of Tasmania
 - Wauchope Veterinary Clinic
+- WIRES Wildlife Rescue
 - Wollongbar Primary Industries Institute
 
 _Veterinary clinics_
 - Dermcare-Vet
+- Forbes St Veterinary Clinic
+- Australia Zoo Wildlife Hospital
 
 _Individuals_
+- Amber Gillet
+- Amy Northover
+- Bob Clippingdale
 - Craig Coorey
+- David Forshaw
 - Derek Spielman
 - Graeme Brown
 - Jacqui van Teulingen
+- Jenna Bytheway
 - Joanna Griffith
 - Kathryn Schlotfeldt
 - Lindsay Kemp
 - Lyn McDougall,
+- Manuel Ruiz
 - Mark Krockenberger
+- Peter Banks
+- Renata Phelps
 - Simon Craig
+- Stephen Cutter
 - Stephen Doggett
+- Trine Kruse
 
 ## References
 1. Chalada, M. J., Stenos, J., and Bradbury, R. S. 2016. Is there a Lyme-like disease in Australia? Summary of findings to date. One Health 2:42-54
