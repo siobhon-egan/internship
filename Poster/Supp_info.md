@@ -66,7 +66,7 @@ _Individuals_
 
 ## Want more information?
 
-Head to the following for more links on research by the Cryptick Lab
+Head to the following links for more information on research by the Cryptick Lab
 
 - [Vector and Waterborne Pathogens Research Group](http://www.murdoch.edu.au/Research-capabilities/Vector-and-Waterborne-Pathogens-Group/)
 - [Join our pilot study](http://www.murdoch.edu.au/Research-capabilities/Vector-and-Waterborne-Pathogens-Group/Pilot-Study/)
