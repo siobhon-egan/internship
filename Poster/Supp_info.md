@@ -2,7 +2,7 @@
 
 ## Acknowledgements
 
-Vector and Waterborne Pathogen Research Group, Murdoch University, Western Australia
+Vector and Waterborne Pathogen Research Group, Murdoch University, Western Australia.<br></br>
 Pawsey Supercomputing Centre, Kensington, Western Australia.
 
 **Funding & resources**
@@ -11,6 +11,7 @@ Pawsey Supercomputing Centre, Kensington, Western Australia.
 130100050), Bayer Australia Ltd and Bayer AG (Germany).
 - Bayer Australia Ltd assisted in distributing and collecting tick sampling kits from veterinary clinics around Australia.
 
+<br></br>
 **Contribution of tick specimens**
 
 _Organisations_
@@ -58,11 +59,15 @@ _Individuals_
 - Stephen Doggett
 - Trine Kruse
 
+<br></br>
+
 ## References
 1. Chalada, M. J., Stenos, J., and Bradbury, R. S. 2016. Is there a Lyme-like disease in Australia? Summary of findings to date. One Health 2:42-54
 2. Radcliffe, J., Rusjakovski, N., Forkert, J., Jones, M., and Stewart, C. 2016. Senate inquiry: Growing evidence of an emerging tick-borne disease that causes a Lyme-like illness for many Australian patients. Australian Commonwealth Government
 3. Loh, S. M., Gofton, A. W., Lo, N., Gillet, A., Ryan, U. M., Irwin, P. J. and Oskam, C. 2016. Novel _Borrelia_ species detected in echidna ticks, _Bothriocroton concolor_, in Australia. Parasites & Vectors 9:339.
 4. Gofton, A. W., Dogget, S., Ratchford, A., Ryan, U., Irwin, P 2016. Phylogenetic characterisation of two novel Anaplasmataceae from Australian _Ixodes holocyclus_ ticks: ‘Candidatus Neoehrlichia australis’ and ‘Candidatus Neoehrlichia arcana’ IJSEM 66:4256-4261.
+
+<br></br>
 
 ## Want more information?
 
