@@ -2,6 +2,8 @@
 
 ### Acknowledgements
 
+Vector and Waterborne Pathogen Research Group, Murdoch University, Western Australia
+
 **Funding & resources**
 - This research was part-funded by the Australian Research Council (Linkage Project
 130100050), Bayer Australia Ltd and Bayer AG (Germany).
@@ -11,26 +13,34 @@
 
 _Organisations_
 - Animal Management in Rural & Remote Indigenous Communities (AMRRIC)
-- The Animal Protection Society of WA Inc. (APS),
-- Parasitology Division School of Veterinary and Life Sciences, Murdoch University
-- Wollongbar Primary Industries Institute
-- Merewether Veterinary Specialist Centre
-- Wauchope Veterinary Clinic
-- Gordon Veterinary Hospital
-- Snowy River Veterinary Clinic
 - Asquith Veterinary Clinic
-- Salamander Bay Veterinary Clinic.
+- Gordon Veterinary Hospital
+- Merewether Veterinary Specialist Centre
+- Parasitology Division School of Veterinary and Life Sciences, Murdoch University
+- Salamander Bay Veterinary Clinic
+- Snowy River Veterinary Clinic
+- The Animal Protection Society of WA Inc. (APS)
+- Wauchope Veterinary Clinic
+- Wollongbar Primary Industries Institute
 
 _Veterinary clinics_
 - Dermcare-Vet
 
 _Individuals_
-- Stephen Doggett
-- Lyn McDougall,
+- Craig Coorey
 - Derek Spielman
-- Mark Krockenberger
-- Joanna Griffith, Simon Craig,
 - Graeme Brown
+- Jacqui van Teulingen
+- Joanna Griffith
 - Kathryn Schlotfeldt
 - Lindsay Kemp
-- Craig Coorey
+- Lyn McDougall,
+- Mark Krockenberger
+- Simon Craig
+- Stephen Doggett
+
+## References
+1. Chalada, M. J., Stenos, J., and Bradbury, R. S. 2016. Is there a Lyme-like disease in Australia? Summary of findings to date. One Health 2:42-54
+2. Radcliffe, J., Rusjakovski, N., Forkert, J., Jones, M., and Stewart, C. 2016. Senate inquiry: Growing evidence of an emerging tick-borne disease that causes a Lyme-like illness for many Australian patients. Australian Commonwealth Government
+3. Loh, S. M., Gofton, A. W., Lo, N., Gillet, A., Ryan, U. M., Irwin, P. J. and Oskam, C. 2016. Novel _Borrelia_ species detected in echidna ticks, _Bothriocroton concolor_, in Australia. Parasites & Vectors 9:339.
+4. Gofton, A. W., Dogget, S., Ratchford, A., Ryan, U., Irwin, P 2016. Phylogenetic characterisation of two novel Anaplasmataceae from Australian _Ixodes holocyclus_ ticks: ‘Candidatus Neoehrlichia australis’ and ‘Candidatus Neoehrlichia arcana’ IJSEM 66:4256-4261.
